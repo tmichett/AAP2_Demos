@@ -1,12 +1,11 @@
+[DEV]
 servera
 serverb
+
+[QA]
 serverc
 serverd
-servere
-serverf
 
-[dev]
+[PROD]
 servere
-
-[test]
 serverf

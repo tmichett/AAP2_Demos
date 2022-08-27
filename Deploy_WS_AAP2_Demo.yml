@@ -26,7 +26,7 @@
     - name: Create Content for Webserver
       ansible.builtin.template:
         src: templates/index.html.j2
-        dest: /var/www/html/index2.html
+        dest: /var/www/html/index.html
 
     - name: Firewall is Enabled
       ansible.builtin.service:

@@ -5,7 +5,7 @@
 <body>
 Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
  <picture>
-  <p style="text-align:center;"><img src="{{ ws_image }}" alt="Penguin 1" style="width:auto;">
+  <p style="text-align:center;"><img src="{{ ws_image }}" alt="{{ ws_image }}" style="width:auto;">
 </picture>
 
 The image should be {{ ws_image }}.
@@ -23,8 +23,15 @@ I have a special message for you:
 <body>
 Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
  <picture>
-  <p style="text-align:center;"><img src="penguin2.png" alt="Penguin 2" style="width:auto;">
+  <p style="text-align:center;"><img src="{{ ws_image }}" alt="{{ ws_image }}" style="width:auto;">
 </picture> 
+
+The image should be {{ ws_image }}.
+
+I have a special message for you: 
+
+{{ ws_special_message }}
+
 </html>
 </body> 
     {% endif %}
@@ -34,8 +41,15 @@ Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
 <body>
 Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
  <picture>
-  <p style="text-align:center;"><img src="penguin3.jpg" alt="Penguin 3" style="width:auto;">
+  <p style="text-align:center;"><img src="{{ ws_image }}" alt="{{ ws_image }}" style="width:auto;">
 </picture> 
+
+The image should be {{ ws_image }}.
+
+I have a special message for you: 
+
+{{ ws_special_message }}
+
 </html>
 </body> 
     {% endif %}

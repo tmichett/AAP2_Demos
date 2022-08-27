@@ -1,18 +1,18 @@
     
     
-    {% if {{ inv_host_var }} is 'DEV' %}
+    {% if "{{ inv_host_var }}" is 'DEV' %}
  <picture>
   <img src="penguin.png" alt="Penguin 1" style="width:auto;">
 </picture> 
     {% endif %}
 
-    {% if {{ inv_host_var }} is 'QA' %}
+    {% if "{{ inv_host_var }}" is 'QA' %}
  <picture>
   <img src="penguin2.png" alt="Penguin 2" style="width:auto;">
 </picture> 
     {% endif %}
 
-    {% if {{ inv_host_var }} is 'PROD' %}
+    {% if "{{ inv_host_var }}" is 'PROD' %}
  <picture>
   <img src="penguin3.png" alt="Penguin 3" style="width:auto;">
 </picture> 

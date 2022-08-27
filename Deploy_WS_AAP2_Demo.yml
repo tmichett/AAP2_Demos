@@ -21,7 +21,7 @@
       loop:
         - files/penguin.png
         - files/penguin2.png
-        - files/penguin3.png
+        - files/penguin3.jpg
 
     - name: Create Content for Webserver
       ansible.builtin.template:

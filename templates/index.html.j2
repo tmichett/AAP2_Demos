@@ -3,9 +3,17 @@
     {% if inv_host_var == "DEV" %}
 <html>
 <body>
+Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
  <picture>
-  <p style="text-align:center;"><img src="penguin.png" alt="Penguin 1" style="width:auto;">
+  <p style="text-align:center;"><img src="{{ ws_image }}" alt="Penguin 1" style="width:auto;">
 </picture>
+
+The image should be {{ ws_image }}.
+
+I have a special message for you: 
+
+{{ ws_special_message }}
+
 </html>
 </body> 
     {% endif %}
@@ -24,6 +32,7 @@ Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
     {% if inv_host_var == "PROD" %}
 <html>
 <body>
+Hello I'm {{  inventory_hostname }} and I'm in the {{ inv_host_var }}
  <picture>
   <p style="text-align:center;"><img src="penguin3.jpg" alt="Penguin 3" style="width:auto;">
 </picture> 

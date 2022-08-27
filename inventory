@@ -9,3 +9,7 @@ serverd
 [PROD]
 servere
 serverf
+
+[DEV:vars]
+ws_image: penguin1.png
+ws_special_message: "I'm a Development Webserver"

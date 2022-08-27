@@ -1,19 +1,31 @@
     
     
-    {% if "{{ inv_host_var }}" == 'DEV' %}
+    {% if "{{ inv_host_var }}" == DEV %}
+<html>
+<body>
  <picture>
   <img src="penguin.png" alt="Penguin 1" style="width:auto;">
-</picture> 
+</picture>
+</html>
+</body> 
     {% endif %}
 
-    {% if "{{ inv_host_var }}" == 'QA' %}
+    {% if "{{ inv_host_var }}" == QA %}
+<html>
+<body>
  <picture>
   <img src="penguin2.png" alt="Penguin 2" style="width:auto;">
 </picture> 
+</html>
+</body> 
     {% endif %}
 
-    {% if "{{ inv_host_var }}" == 'PROD' %}
+    {% if "{{ inv_host_var }}" == PROD %}
+<html>
+<body>
  <picture>
   <img src="penguin3.png" alt="Penguin 3" style="width:auto;">
 </picture> 
+</html>
+</body> 
     {% endif %}

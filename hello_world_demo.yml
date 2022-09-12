@@ -1,0 +1,7 @@
+
+- name: Hello World Sample Message
+  hosts: all
+  tasks:
+    - name: Hello Message - Demo
+      debug:
+        msg: "Hello World! I'm a message from {{  inventory_hostname }}!!!"

@@ -11,11 +11,6 @@
 
     - name: Create Content for Webserver
       ansible.builtin.copy:
-        content: "I'm an awesome webserver for the ENV environment!! \n"
-        dest: /var/www/html/index.html
-
-    - name: Create Content for Webserver
-      ansible.builtin.copy:
         src: "{{ item }}"
         dest: /var/www/html/
       loop:

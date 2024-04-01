@@ -1,6 +1,6 @@
 ---
 - name: Playbook to Fully Setup and Configure a Webserver
-  hosts: "{{ inv_host_var default('servera') }}"
+  hosts: "{{ inv_host_var | default('servera') }}"
   tasks:
     - name: Install Packages for Webserver
       yum:

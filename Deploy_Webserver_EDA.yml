@@ -11,7 +11,7 @@
 
     - name: Create Content for Webserver
       copy:
-        content: "I'm an awesome webserver for the ENV environment!! \n"
+        content: "I'm an awesome webserver for the EDA environment!! \n"
         dest: /var/www/html/index.html
 
     - name: Firewall is Enabled

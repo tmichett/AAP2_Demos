@@ -1,0 +1,19 @@
+---
+- name: Send a message to the chat group - Website Down
+  hosts: workstation.lab.example.com
+  gather_facts: false
+  tasks:
+    - name: Send the message
+      ansible.builtin.uri:
+        url: http://mattermost.lab.example.com:8065/hooks/a8my9aia1fbs9kw97bp87y1g5r
+        method: POST
+        headers:
+          Content-Type: application/json
+        body_format: json
+        body:
+          text: |
+            # Alert
+            #### The website service has been restored!!
+      delegate_to: workstation.lab.example.com
+
+## NOTE: The Mattermost URL will need updated when a webhook is created!!!!

@@ -1,0 +1,21 @@
+---
+- name: Playbook to restore Index.html on server
+  hosts: "{{ inv_host_var | default('servera') }}"
+  tasks:
+    - name: Display a message
+      ansible.builtin.debug:
+        msg: "Website is down! - Index.html file is missing!"
+
+    - name: Create an Index.HTML File
+      ansible.builtin.copy:
+        content: |
+          <!DOCTYPE html>
+          <html lang=”en”>
+            <head>
+              <title>Welcome to Red Hat Training</title>
+            </head>
+              <body>
+                <p>This is a test page on Apache!!</p>
+              </body>
+          </html>
+        dest: /var/www/html/index.html

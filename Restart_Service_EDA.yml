@@ -1,0 +1,12 @@
+---
+- name: Playbook to restore HTTPD Service
+  hosts: "{{ inv_host_var | default('servera') }}"
+  tasks:
+    - name: Display a message
+      ansible.builtin.debug:
+        msg: "Website is down! - HTTPD Service needs started"
+
+    - name: Start apache service
+      ansible.builtin.service:
+        name: httpd
+        state: started
